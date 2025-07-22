@@ -1,0 +1,30 @@
+===== LOG FILE ANALYSIS REPORT =====
+File: sample.log
+Analyzed on: Mon, Jul 21, 2025 11:16:49 PM
+Size: 4.0K (2388 bytes)
+
+MESSAGE COUNTS:
+ERROR: 24 messages
+WARNING: 9 messages
+INFO: 4 messages
+
+TOP 5 ERROR MESSAGES:
+   9 - ERROR: Database connection failed: timeout
+   5 - ERROR: Invalid authentication token provided
+   5 - ERROR: Failed to write to disk: Permission denied
+   3 - ERROR: API rate limit exceeded
+   2 - ERROR: Uncaught exception: Null pointer reference
+
+ERROR TIMELINE:
+First error: [2025-07-10 02:14:32] ERROR: Database connection failed: timeout
+Last error:  [2025-07-12 14:03:27] ERROR: Failed to write to disk: Permission denied
+
+Error frequency by hour:
+00-04: ███ (6)
+04-08: ██ (4)
+08-12: ███ (5)
+12-16: ██ (4)
+16-20: ██ (3)
+20-24: █ (2)
+
+Report saved to: log_analysis_2025-07-21_23:16:49.txt
